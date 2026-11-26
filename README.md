@@ -4,11 +4,11 @@ Este repositório público contém **apenas APK assinadas e o manifesto de atual
 
 ## Versão disponível
 
-**0.1.3-alpha (versão de testes, assinatura permanente)**
+**0.1.4-alpha (versão de testes, assinatura permanente)**
 
-- [Descarregar APK para Android](https://github.com/MarcosMig/Futsal-Live-Android-Releases/raw/refs/heads/main/apk/futsal-live-0.1.3-alpha.apk)
+- [Descarregar APK para Android](https://github.com/MarcosMig/Futsal-Live-Android-Releases/raw/refs/heads/main/apk/futsal-live-0.1.4-alpha.apk)
 - [Consultar manifesto de atualizações](https://raw.githubusercontent.com/MarcosMig/Futsal-Live-Android-Releases/main/live-update.json)
-- SHA-256 da APK: `ce6c502d363ce9a9fbcc91770429e718cc8a2bb4f907db757d21b8571c174ede`
+- SHA-256 da APK: `0c659a2bf2d2a8bbc23f0601e4ecf8347cbc1b2839c5547f86bba6c8aeff7ee7`
 
 ### Instalação
 
@@ -22,3 +22,7 @@ Este repositório público contém **apenas APK assinadas e o manifesto de atual
 O botão **Verificar atualização** da aplicação consulta `live-update.json`, compara `version_code`, confirma o SHA-256 da APK e abre o instalador oficial Android. A Internet é necessária para verificar e descarregar; o registo de jogo funciona em rede local sem Internet.
 
 As novas versões devem aumentar o `version_code` e publicar um novo ficheiro APK assinado com **a mesma chave privada**, seguido da atualização do manifesto. Nunca publicar chaves, passwords, tokens ou bases de dados neste repositório.
+
+## Teste de atualização 0.1.3 → 0.1.4
+
+Se já instalaste **0.1.3-alpha assinada permanentemente**, não descarregues a 0.1.4 manualmente: abre a app, toca em **Verificar atualização**, confirma o download e segue o instalador Android. O Android deve preservar os dados locais porque as duas APK usam a mesma chave. Confirma depois os jogadores e o jogo de teste.
