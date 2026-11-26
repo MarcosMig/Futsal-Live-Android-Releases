@@ -4,11 +4,11 @@ Este repositório público contém **apenas APK assinadas e o manifesto de atual
 
 ## Versão disponível
 
-**0.1.4-alpha (versão de testes, assinatura permanente)**
+**0.1.5-alpha (versão de testes, assinatura permanente)**
 
-- [Descarregar APK para Android](https://github.com/MarcosMig/Futsal-Live-Android-Releases/raw/refs/heads/main/apk/futsal-live-0.1.4-alpha.apk)
+- [Descarregar APK para Android](https://github.com/MarcosMig/Futsal-Live-Android-Releases/raw/refs/heads/main/apk/futsal-live-0.1.5-alpha.apk)
 - [Consultar manifesto de atualizações](https://raw.githubusercontent.com/MarcosMig/Futsal-Live-Android-Releases/main/live-update.json)
-- SHA-256 da APK: `0c659a2bf2d2a8bbc23f0601e4ecf8347cbc1b2839c5547f86bba6c8aeff7ee7`
+- SHA-256 da APK: `c80d541bd9ea0d16ee8f74cb5691a2580df979d8f9f566cf353b286bbad46fc4`
 
 ### Instalação
 
@@ -26,3 +26,7 @@ As novas versões devem aumentar o `version_code` e publicar um novo ficheiro AP
 ## Teste de atualização 0.1.3 → 0.1.4
 
 Se já instalaste **0.1.3-alpha assinada permanentemente**, não descarregues a 0.1.4 manualmente: abre a app, toca em **Verificar atualização**, confirma o download e segue o instalador Android. O Android deve preservar os dados locais porque as duas APK usam a mesma chave. Confirma depois os jogadores e o jogo de teste.
+
+## Correção 0.1.5
+
+Após uma atualização ou reinício do servidor Android, os antigos logins temporários deixam de existir; por isso as funções exclusivas são libertadas ao arrancar. Os jogos, atletas e eventos mantêm-se. Também existe um comando **Recuperar função** mediante código de emparelhamento para operadores que fiquem bloqueados durante a sessão. Não o utilizar se o operador anterior ainda estiver ativo.
