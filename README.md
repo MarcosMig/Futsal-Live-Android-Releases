@@ -1,32 +1,24 @@
-# Futsal Live! Android — Distribuição
+# Futsal Live! Android — APK e atualizações
 
-Este repositório público disponibiliza **exclusivamente as versões instaláveis** do Futsal Live! Android e o manifesto de atualizações. O código-fonte, os dados dos jogos, os jogadores e as chaves de assinatura **não são publicados aqui**.
+Este repositório público contém **apenas APK assinadas e o manifesto de atualizações**. O código-fonte, as bases de dados dos jogos e a chave de assinatura permanecem privados.
 
-## Estado
+## Versão disponível
 
-A infraestrutura de atualização está implementada no projeto privado `MarcosMig/Futsal-Performance-Hub` (branch `feature/android-live-autonomous-foundation`), mas **ainda não há APK estável publicada neste repositório**. Não instalar versões para utilização oficial em jogos.
+**0.1.3-alpha (versão de testes, assinatura permanente)**
 
-## Convenção de publicação
+- [Descarregar APK para Android](https://github.com/MarcosMig/Futsal-Live-Android-Releases/raw/refs/heads/main/apk/futsal-live-0.1.3-alpha.apk)
+- [Consultar manifesto de atualizações](https://raw.githubusercontent.com/MarcosMig/Futsal-Live-Android-Releases/main/live-update.json)
+- SHA-256 da APK: `ce6c502d363ce9a9fbcc91770429e718cc8a2bb4f907db757d21b8571c174ede`
 
-1. Compilar uma APK release com a **mesma chave de assinatura permanente** e um `versionCode` superior ao anterior.
-2. Criar uma GitHub Release com a tag `vX.Y.Z` e anexar a APK com nome `futsal-live.apk`.
-3. Calcular SHA-256 da APK publicada e criar/atualizar `live-update.json` na branch `main`:
+### Instalação
 
-```json
-{
-  "application_id": "pt.fperformance.live",
-  "version_code": 4,
-  "version_name": "0.1.3-alpha",
-  "apk_url": "https://github.com/MarcosMig/Futsal-Live-Android-Releases/releases/download/v0.1.3-alpha/futsal-live.apk",
-  "sha256": "SUBSTITUIR_PELO_SHA256_REAL_DE_64_CARACTERES"
-}
-```
+- A instalação fora da Play Store exige que o utilizador permita esta origem de instalação e confirme a operação no Android.
+- **Esta APK é uma versão técnica de ensaio, não adequada a ser usada como único cronómetro em jogo oficial.**
+- Se uma versão debug anterior (`0.1.1` ou `0.1.2-alpha`) estiver instalada com outra assinatura, o Android poderá recusar esta instalação. **Desinstalar a aplicação antiga apaga os dados locais**; não o faças antes de guardar quaisquer jogos ou estatísticas importantes.
+- Depois da primeira instalação **assinada permanentemente**, versões futuras com o mesmo identificador e a mesma assinatura poderão atualizar sem eliminar os dados locais.
 
-O exemplo acima **não é um manifesto operativo**; publicar `live-update.json` apenas quando a APK real existir. A app irá obter o manifesto via `https://raw.githubusercontent.com/MarcosMig/Futsal-Live-Android-Releases/main/live-update.json`.
+### Como funcionam as atualizações seguintes
 
-## Segurança
+O botão **Verificar atualização** da aplicação consulta `live-update.json`, compara `version_code`, confirma o SHA-256 da APK e abre o instalador oficial Android. A Internet é necessária para verificar e descarregar; o registo de jogo funciona em rede local sem Internet.
 
-- Nunca adicionar keystores (`.jks`, `.keystore`), passwords, tokens, bases de dados ou relatórios.
-- As atualizações exigem confirmação do utilizador pelo instalador Android.
-- O sistema Android valida o certificado de assinatura da atualização. Uma APK debug assinada por outra chave **não atualiza** uma instalação existente.
-- Antes da primeira instalação estável, fazer uma cópia de segurança dos dados importantes da versão de testes.
+As novas versões devem aumentar o `version_code` e publicar um novo ficheiro APK assinado com **a mesma chave privada**, seguido da atualização do manifesto. Nunca publicar chaves, passwords, tokens ou bases de dados neste repositório.
