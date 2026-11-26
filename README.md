@@ -4,11 +4,11 @@ Este repositório público contém **apenas APK assinadas e o manifesto de atual
 
 ## Versão disponível
 
-**0.1.5-alpha (versão de testes, assinatura permanente)**
+**0.1.7-alpha (versão de testes, assinatura permanente)**
 
-- [Descarregar APK para Android](https://github.com/MarcosMig/Futsal-Live-Android-Releases/raw/refs/heads/main/apk/futsal-live-0.1.5-alpha.apk)
+- [Descarregar APK para Android](https://github.com/MarcosMig/Futsal-Live-Android-Releases/raw/refs/heads/main/apk/futsal-live-0.1.7-alpha.apk)
 - [Consultar manifesto de atualizações](https://raw.githubusercontent.com/MarcosMig/Futsal-Live-Android-Releases/main/live-update.json)
-- SHA-256 da APK: `c80d541bd9ea0d16ee8f74cb5691a2580df979d8f9f566cf353b286bbad46fc4`
+- SHA-256 da APK: `f0731eacc516a9788e06a1106d96829b83a551f525fc72f7e4890dd1228a18d3`
 
 ### Instalação
 
@@ -30,3 +30,9 @@ Se já instalaste **0.1.3-alpha assinada permanentemente**, não descarregues a 
 ## Correção 0.1.5
 
 Após uma atualização ou reinício do servidor Android, os antigos logins temporários deixam de existir; por isso as funções exclusivas são libertadas ao arrancar. Os jogos, atletas e eventos mantêm-se. Também existe um comando **Recuperar função** mediante código de emparelhamento para operadores que fiquem bloqueados durante a sessão. Não o utilizar se o operador anterior ainda estiver ativo.
+
+## Sincronizar o plantel (teste 0.1.7)
+
+No tablet principal, o botão **Sincronizar plantel** solicita as credenciais da conta Performance Hub e descarrega os atletas pela API autenticada. Os nomes, posições, números e fotografias são armazenados localmente, para consulta offline. Apenas o email é lembrado no tablet; não se guardam passwords nem tokens. Os outros tablets recebem os cartões através da rede local.
+
+**Esta funcionalidade ainda precisa de validação em dispositivo físico com uma conta Hub ativa.** A aplicação continua a ser um protótipo de testes, não deve ser utilizada como único cronómetro oficial.
