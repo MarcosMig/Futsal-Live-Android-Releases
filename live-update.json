@@ -1,7 +1,7 @@
 {
   "application_id": "pt.fperformance.live",
-  "version_code": 10,
-  "version_name": "0.1.9-alpha",
-  "apk_url": "https://raw.githubusercontent.com/MarcosMig/Futsal-Live-Android-Releases/main/apk/futsal-live-0.1.9-alpha.apk",
-  "sha256": "6621bb5eff28b73c442f100425183e6298261495c5799254b15edd0067d2e0e4"
+  "version_code": 12,
+  "version_name": "0.2.1-alpha",
+  "apk_url": "https://raw.githubusercontent.com/MarcosMig/Futsal-Live-Android-Releases/main/apk/futsal-live-0.2.1-alpha.apk",
+  "sha256": "4f4e4b0cf7cc1f4a46bd5965de719a85f92447347408b357329f599ca494c69d"
 }
